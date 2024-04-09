@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* 
+        기본 태그들이 가지고 있는 고유 속성들을 없애주는 코드
+        <link rel="stylesheet" href="reset.css"> 와 같은 의미
+        @import url(reset.css);
+        */
+        .container{
+            width: 100%;
+            /* vh/vw : 모니터(브라우저 기준) 높이/너비 */
+            height: 100vh;
+            /* linear-gradient() */
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)),url(/image/room.jpg);
+            background-size: cover;
+        }
+        .container>.navbar{
+            width: 90%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px auto;
+        }
+        .container>.navbar>h1>a{
+            color: rgba(68, 31, 4, 0.471);
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container>.navbar>ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container>.navbar>ul>li{
+            margin: 0 10px;
+        }
+        .container>.navbar>ul>li>a{
+            color: rgba(255, 255, 255, 0.73);
+            text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.715);
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container>.navbar>ul>li>a:hover{
+            color: rgba(42, 25, 25, 0.747);
+        }
+        .container>.main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .container>.main>h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .container>.main button{
+            margin-top: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 30px;
+            color: white;
+            background-color: rgba(183, 135, 97, 0.581);
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            border: 5px solid rgba(55, 26, 2, 0.529);
+            transition: 0.7s;
+        }
+        .container>.main>h2:hover{
+            background-color: rgba(232, 216, 180, 0.42);
+            color:rgba(55, 26, 2, 0.674);
+            transition: 0.7s;
+        }
+        .container>.main button:hover{
+            color: rgba(34, 32, 32, 0.776);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <H1><a href="">DESIGN</a></H1>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="">SIGNUP</a></li>
+                <li><a href="">BOARD</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Wecome to Front-End World</h2>
+            <a href=""><button>Learn More</button></a>
+        </div>
+    </div>
+</body>
+</html>

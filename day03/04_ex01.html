@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <!-- 
+        div 3개를 만들어서
+        naver, google, daum 사이트로 연결되게 하고
+        새 창이 띄어지도록 연결
+        각각의 div 색을 달리하여 스타일 설정
+        링크색 변경
+        ul 하단에 li 10개 설정하여 1~10표현
+        짝수만 글자색 빨간색
+        3,6,9는 초록색
+        1,10은 굵게 처리
+        뒤요소에 .을 추가
+        a태그 의사 선택자 순서(link->visited->active)
+     -->
+     <style>
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: chartreuse;
+        }
+        a:active{
+            color: aqua;
+        }
+        /* block 태그 : 넓이와 높이를 가질 수 있음 */
+        div{
+            background-color:darkgray;
+            border: 1px solid;
+            width: 100px;
+            height: 30px;
+        }
+        .naver{
+            background-color: darkgreen;
+        }
+        .google{
+            background-color: chocolate;
+        }
+        .daum{
+            background-color: blue;
+        }
+        ul>li:nth-of-type(even){
+            color: red;   
+        }
+        ul>li:nth-of-type(3n){
+            color: green;
+        }
+        ul>li:first-child, ul>li:last-child{
+            font-weight: 1000;
+        }
+        ul>li::after{
+            content: ".";
+        }
+        
+        /* inline : 세로 형태(block태그)를 가로 형태로 처리 */
+        ul>li{
+            list-style: none;
+            display: inline;
+        }
+        
+        /* 왼쪽 padding을 0으로 설정 */
+        ul{
+            padding-left: 0;
+        }
+     </style>
+</head>
+<body>
+    <div class="naver">
+        <a href="http://www.naver.com" target="_blank">naver</a></div>
+    <div class="google">
+        <a href="http://www.google.com" target="_blank">google</a></div>
+    <div class="daum">
+        <a href="http://www.daum.net" target="_blank">daum</a></div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+</html>

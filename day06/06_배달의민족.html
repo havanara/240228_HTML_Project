@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배달의민족</title>
+    <!-- font link -->
+    <!-- 해당하는 css font-family 삽입 -->
+    <style>
+        @font-face {
+            font-family: bm1;
+            src: url(../font/ttf/BMHANNAPro.ttf);
+        }
+        @font-face {
+            font-family: bm2;
+            src: url(../font/ttf/BMYEONSUNG_ttf.ttf);
+        }
+        @font-face {
+            font-family: bm3;
+            src: url(../font/ttf/BMJUA_ttf.ttf);
+        }
+        body{
+            background-color: #2ac1bc;
+            margin-top: 50px;
+        }
+        header{
+            font-family: bm1;
+            text-align: center;
+            margin: 20px;
+        }
+        div{
+            font-family: bm1;
+            text-align: center;
+        }
+        header>h1{
+            font-size: 60px;
+        }
+        header>h3{
+            font-size: 30px;
+        }
+        .menu{
+            width: 300px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        .menu>div:first-child{
+            width: 300px;
+            height: 200px;
+            background-color: #2ac1bc;
+            background-size: 300px, 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .image1{
+            background-image: url(../image/초밥.jpg);
+        }
+        .menu>div>h3{
+            font-family: bm3;
+        }
+        .menu>div:last-child{
+            font-family: bm2;
+        }
+        .menu>div>p:nth-last-of-type(1){
+            font-size: 17px;
+        }
+        .menu>div>p:last-child{
+            padding-bottom: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>배달의 민족</h1>
+        <h3>넌 배달할 때가 제일 멋있어</h3>
+    </header>
+    <!-- 여기서부터 메뉴 -->
+        <div class="menu">
+            <div class="image1"></div>
+            <div>
+                <h3>맛있는 초밥</h3>
+                <p>주머니가 가벼운 당신의 마음까지 생각한 착한 가격!</p>
+                <p><del>25,000원</del> 15,000원</p>
+                <p>바로결제</p>
+            </div>
+        </div>
+</body>
+</html>

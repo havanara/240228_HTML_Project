@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionEx01</title>
+    <!-- 
+        상하좌우 값이 있을 경우
+        magin: 10px -> 상하좌우 전체 10px
+        magin: 10px 20px -> 상하(10px) 좌우(20px)를 의미
+        magin: 10px 20px 30px -> 상(10px) 좌우(20px) 하(30px)를 의미
+        magin: 10px 20px 30px 40px -> 상(10px) 우(20px) 하(30px) 좌(40px)를 의미(시계방향)
+     -->
+    <style>
+    .thanksbox{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    float: left;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.thanksbox:hover{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(165, 42, 42, 0.49);
+    /* transform: translate(10px,10px); 
+    top: 10px;
+    left: 10px; 와 같은 의미*/
+    }
+    .thanksbox::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="thanksbox">T</div>
+    <div class="thanksbox">H</div>
+    <div class="thanksbox">A</div>
+    <div class="thanksbox">N</div>
+    <div class="thanksbox">K</div>
+    <div class="thanksbox">S</div>
+</body>
+</html>

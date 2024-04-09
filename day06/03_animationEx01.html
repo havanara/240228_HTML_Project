@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animationEx</title>
+    <style>
+        @keyframes move{
+            0%{
+                left: 10%;
+                background-color: darkmagenta;
+            }
+            50%{
+                left: 80%;
+                background-color: rgba(255, 164, 255, 0.713);
+            }
+            100%{
+                left: 10%;
+                background-color: darkmagenta;
+            }
+        }
+        .ani{
+            width: 100px;
+            height: 100px;
+            background-color: darkmagenta;
+            position: absolute;
+            left: 10%;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="ani"> </div>
+</body>
+</html>

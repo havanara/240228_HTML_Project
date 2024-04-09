@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionEx</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 150px;
+            background-color: beige;
+            position: relative;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            float: left;
+            margin-top: 25px;
+        }
+        .inner:nth-child(1){
+            background-color: rgb(103, 216, 207);
+            left: 25px;
+        }
+        .inner:nth-child(2){
+            background-color: rgb(133, 218, 118);
+            left: 50%;
+            /* transform: translate(x축, y축); */
+            transform: translate(-50%);
+        }
+        .inner:nth-child(3){
+            background-color: rgb(71, 44, 44);
+            right: 25px;
+        }
+        .outerbox{
+            width: 500px;
+            height: 500px;
+            background-color: darkmagenta;
+            position: relative;
+        }
+        .innerbox{
+            width: 100px;
+            height: 100px;
+            background-color: beige;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner" ></div>
+        <div class="inner" ></div>
+        <div class="inner" ></div>
+    </div>
+    <div class="outerbox">
+        <div class="innerbox"></div>
+    </div>
+</body>
+</html>

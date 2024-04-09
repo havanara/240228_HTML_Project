@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media_grid</title>
+</head>
+<!-- 
+    가장 좁을 때
+    min-width : 800px
+    min-width : 1200px
+ -->
+ <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        width: 100%;
+    }
+    .header{
+        height: 60px;
+        background-color: rgb(90, 107, 239);
+    }
+    .main-img{
+        height: 300px;
+        background-color: rgb(128, 143, 240);
+    }
+    .subject{
+        height: 350px;
+        background-color: rgb(128, 195, 240);
+    }
+    .content{
+        height: 500px;
+        background-color: rgb(128, 169, 240);
+    }
+    .sub{
+        height: 200px;
+        background-color: rgb(167, 205, 255);
+    }
+    .footer{
+        height: 200px;
+        background-color: rgb(64, 147, 186);
+    }
+    @media screen and (min-width:800px) {
+        .header{
+            height: 60px;
+        }
+        .main-img{
+            height: 500px;
+        }
+        .subject{
+            height: 350px;
+        }
+        .content{
+            width: 50%;
+            float: left;
+            height: 400px;
+        }
+        .sub{
+            width: 50%;
+            float: right;
+            height: 400px;
+        }
+        .footer{
+            height: 200px;
+            clear: both;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        .header{
+            height: 60px;
+        }
+        .main-img{
+            height: 500px;
+        }
+        .subject{
+            width: 50%;
+            height: 600px;
+            float: left;
+        }
+        .content{
+            width: 50%;
+            float: right;
+            height: 300px;
+        }
+        .sub{
+            width: 50%;
+            float: right;
+            height: 300px;
+        }
+        .footer{
+            height: 200px;
+            clear: both;
+        }
+        }
+    
+ </style>
+<body>
+    <div class="header"></div>
+    <div class="main-img"></div>
+    <div class="subject"></div>
+    <div class="content"></div>
+    <div class="sub"></div>
+    <div class="footer"></div>
+</body>
+</html>
